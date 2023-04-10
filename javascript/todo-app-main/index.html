@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/style/style.css" />
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo__contain">
+        <div class="todo__title">
+          <h1 class="title">TODO</h1>
+
+          <span class="theme theme--active">
+            <img src="/images/icon-sun.svg" alt="theme-light" />
+          </span>
+
+          <span class="theme theme--hidden">
+            <img src="/images/icon-moon.svg" alt="theme-dark">
+          </span>
+        </div>
+
+        <div class="todo__list">
+          <div class="todo__add block">
+            <span class="circle circle--active"></span>
+            <input
+              autofocus
+              class="newTask"
+              type="text"
+              placeholder="Create a new todo..."
+            />
+          </div>
+
+          <div class="todo__task block">
+            <ul class="task__list">
+              <!-- <li class="list__item list__item--active">
+                <span class="circle"></span>
+                <span class="item__title">Task 1</span>
+                <img class="item__img item__img--visible" src="/images/icon-cross.svg" alt="delete" />
+              </li> -->
+
+              <li class="list__item task__info">
+                <div class="info__number">
+                  <p><span class="number"></span> items left</p>
+                </div>
+
+                <div id="task__filter--web">
+                  <span class="filter filter--active">All</span>
+                  <span class="filter">Active</span>
+                  <span class="filter">Completed</span>
+                </div>
+
+                <div class="task__clear">
+                  <span class="clear">Clear Completed</span>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="task__filter block">
+            <span class="filter filter--active">All</span>
+            <span class="filter">Active</span>
+            <span class="filter">Completed</span>
+          </div>
+        </div>
+        <!-- cierre todo__list -->
+
+        <footer class="footer__text">
+          <p>Drog and drop to reorder list</p>
+        </footer>
+      </div>
+      <!-- cierre todo__contain -->
+    </div>
+    <!-- cierre container -->
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>

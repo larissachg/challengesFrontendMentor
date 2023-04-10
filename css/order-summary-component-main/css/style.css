@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --font-family: 'Red Hat Display', sans-serif;
+
+    --primaryWhite: hsl(225, 100%, 94%);
+    --primaryBlue: hsl(245, 75%, 52%);
+    --neutralVeryWhite: hsl(225, 100%, 98%);
+    --neutralDesaturatedBlue: hsl(224, 23%, 55%);
+    --neutralDarkBlue: hsl(223, 47%, 23%);
+    --hoverblue: rgb(118, 108, 241);
+    --hoverblueOpacity: rgba(119, 108, 241, 0.373);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-family);
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--primaryWhite);
+    background-size: 100% 50%;
+    font-size: 1.6rem;
+}
+
+.card{
+    max-width: 45rem;
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.card__img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card__title{
+    font-weight: 900;
+    font-size: 2.8rem;
+}
+
+.card__text{
+    color: var(--neutralDesaturatedBlue);
+    width: 90%;
+    align-self: center;
+    line-height: 1.5;
+}
+
+.card__info{
+    margin: 3rem 4.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card__service{
+    background-color: var(--neutralVeryWhite);
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    align-items: center;
+    
+}
+.card__service a{
+    flex-grow: 1;
+    text-align: end;
+    color: var(--primaryBlue);
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+.card__service a:hover{
+    text-decoration: none;
+    color: var(--hoverblue);
+}
+.plan__bold{
+    font-weight: 900;
+}
+.plan__price{
+    color: var(--neutralDesaturatedBlue);
+}
+
+.card__pay{
+    width: 100%;
+    text-decoration: none;
+    background-color: var(--primaryBlue);
+    color: var(--neutralVeryWhite);
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-weight: 700;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    box-shadow: 0 10px 10px var(--hoverblueOpacity);
+}
+.card__pay:hover{
+    background-color: var(--hoverblue);
+    transition: 0.4s ease-in-out;
+}
+
+.card__cancel{
+    text-decoration: none;
+    color: var(--neutralDesaturatedBlue);
+    font-weight: 900;
+    padding-bottom: 4rem;
+    font-size: 1.5rem;
+}

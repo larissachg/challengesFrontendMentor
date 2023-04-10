@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Outfit:wght@300;400;600&family=Poor+Story&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+
+  --primarySoftBlue: hsl(215, 51%, 70%);
+  --primaryCyan: hsl(178, 100%, 50%);
+  --primaryCyan-opacity50: hsl(178, 100%, 50%, 0.5);
+
+  --veryDarkBlue-main: hsl(217, 54%, 11%);
+  --veryDarkBlue-card: hsl(216, 50%, 16%);
+  --varyDarkBlue-line: hsl(215, 32%, 27%);
+  --white-color: hsl(0, 0%, 100%);
+
+  /* Font */
+  --font-family: "Outfit", sans-serif;
+
+  /* Margins */
+  --margin-general: 15px;
+}
+
+body {
+  background-color: var(--veryDarkBlue-main);
+  font-family: var(--font-family);
+}
+
+.card {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: var(--veryDarkBlue-card);
+  margin-top: 15%;
+  padding: 27px;
+  border-radius: 20px;
+}
+
+.card__image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.card__image--picture {
+  width: 100%;
+  display: block;
+}
+
+.card__image--overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--primaryCyan-opacity50);
+  opacity: 0;
+}
+.card__image--overlay:hover {
+  opacity: 1;
+}
+
+.card__image--view {
+  position: absolute;
+  width: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__title {
+  font-size: 20px;
+  color: var(--white-color);
+  margin: var(--margin-general) 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card__title:hover {
+  color: var(--primaryCyan);
+}
+
+.card__text {
+  font-size: 18xp;
+  color: var(--primarySoftBlue);
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.card__info {
+  margin-top: var(--margin-general);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid var(--varyDarkBlue-line);
+}
+
+.card__info--item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 20px;
+}
+
+.card__info--picture {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.card__info--text {
+  color: var(--primarySoftBlue);
+}
+
+.card__info--cyan {
+  color: var(--primaryCyan);
+}
+
+.card__footer {
+  padding-top: var(--margin-general);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.card__footer--picture {
+  width: 40px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1.5px solid var(--white-color);
+}
+
+.card__footer--citation {
+  font-size: 18px;
+  color: var(--primarySoftBlue);
+}
+
+.card__footer--author {
+  cursor: pointer;
+  color: var(--white-color);
+}
+
+.card__footer--author:hover {
+  color: var(--primaryCyan);
+}
+
+/* Responsive design */
+@media (min-width: 375px) {
+  .card {
+    margin-top: 10%;
+    width: 375px;
+  }
+}

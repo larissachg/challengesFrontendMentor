@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-cyan: hsl(193, 37%, 48%);
+  --purple: hsl(268, 36%, 54%);
+  --light-cyan: hsl(192, 67%, 72%);
+  --gray: hsl(0, 0%, 93%);
+  --font-family: "Poppins", sans-serif;
+
+  /* margins */
+  --margin-30: 30px;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+.header {
+  margin-top: var(--margin-30);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main {
+  text-align: center;
+}
+
+.main__hero--imagemobile {
+  margin-top: var(--margin-30);
+  width: 100%;
+}
+
+.main__hero--contain {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.main__hero--title {
+  width: 70%;
+  line-height: 35px;
+}
+
+.main__hero--text {
+  width: 90%;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.main__hero--links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__hero--download {
+  background-color: var(--dark-cyan);
+  text-decoration: none;
+  color: white;
+  width: 170px;
+  height: 55px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.main__hero--download span {
+  color: var(--light-cyan);
+}
+
+.main__hero--info {
+  background-color: var(--purple);
+  text-decoration: none;
+  color: white;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 120px;
+  height: 55px;
+  margin-bottom: 40px;
+}
+
+.main__separator {
+  margin: 20px 0;
+  height: 115px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.main__separator--line {
+  display: block;
+  width: 70px;
+  border-top: 1px solid var(--gray);
+  transform: rotate(90deg);
+  position: absolute;
+  top: 0;
+}
+
+.main__separator--number {
+  font-size: 12px;
+  border: 1.5px solid var(--gray);
+  padding: 12px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.main__gallery {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main__gallery--picture {
+  width: 45%;
+  border-radius: 10px;
+}
+
+.main__texts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+
+.main__texts--description {
+  text-transform: uppercase;
+  color: var(--dark-cyan);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 4px;
+}
+
+.main__texts--subtitle {
+  line-height: 30px;
+}
+
+.main__pharagraph {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.footer {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  padding-top: 80px;
+  background: linear-gradient(
+      0deg,
+      hsl(193, 37%, 48%, 0.8),
+      hsl(193, 37%, 48%, 0.8)
+    ),
+    url(/meetLandingPage/assets/mobile/image-footer.jpg);
+  background-size: 100% 100%, cover;
+  position: relative;
+}
+
+.footer__text {
+  font-size: 15px;
+  color: var(--gray);
+  font-weight: 300;
+}
+
+.footer__subtitle {
+  color: white;
+}
+
+.footer__download {
+  background-color: var(--purple);
+  text-decoration: none;
+  color: white;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 12px 30px;
+  margin-bottom: 40px;
+}
+
+.footer__download span {
+  color: var(--gray);
+  font-weight: 300;
+}
+
+.footer__overlay {
+  position: absolute;
+  top: -85px;
+}
+
+.main__hero--imageDesktopLeft {
+  display: none;
+}
+.main__hero--imageDesktopRight {
+  display: none;
+}
+
+/* Media Queries -> Tablet */
+
+@media (min-width: 775px) {
+  .main__separator--number {
+    font-size: 13px;
+    padding: 13px;
+  }
+
+  .main__hero--contain {
+    width: 60%;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 90px;
+  }
+  .main__hero--title {
+    width: 60%;
+    font-size: 38px;
+    line-height: 40px;
+  }
+  .main__hero--links {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__hero--download {
+    font-size: 13px;
+  }
+  .main__hero--info {
+    margin-bottom: 0;
+    font-size: 13px;
+  }
+
+  .main__gallery {
+    gap: 10px;
+  }
+  .main__gallery--picture {
+    width: 23%;
+  }
+
+  .main__texts {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .main__texts--subtitle {
+    width: 75%;
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .footer__overlay {
+    top: -75px;
+  }
+
+  .footer__subtitle {
+    width: 50%;
+    font-size: 32px;
+    line-height: 37px;
+  }
+
+  .footer__text {
+    width: 80%;
+    font-weight: 400;
+  }
+
+  .footer__download {
+    font-size: 13px;
+  }
+
+  .main__hero--imageDesktopLeft {
+    display: none;
+  }
+  .main__hero--imageDesktopRight {
+    display: none;
+  }
+}
+
+@media (min-width: 1300px) {
+  .main__separator--line {
+    top: -8px;
+  }
+  .main__separator--number {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .header {
+    margin: 70px;
+  }
+  .main__hero {
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main__hero--imageDesktopLeft {
+    display: initial;
+    order: 1;
+  }
+  .main__hero--imageDesktopRight {
+    display: initial;
+    order: 3;
+  }
+  .main__hero--imagemobile {
+    display: none;
+  }
+
+  .main__hero--contain {
+    order: 2;
+    width: 60%;
+  }
+  .main__hero--title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .main__hero--text {
+    font-size: 20px;
+    width: 70%;
+    line-height: 28px;
+  }
+
+  .main__hero--download {
+    font-size: 14px;
+  }
+  .main__hero--info {
+    font-size: 14px;
+  }
+  .main__gallery {
+    width: 80%;
+    margin: 0 auto;
+    gap: 30px;
+  }
+  .main__gallery--picture {
+    width: 22%;
+  }
+
+  .main__texts {
+    padding-top: 60px;
+    width: 40%;
+  }
+  .main__texts--description {
+    font-size: 18px;
+  }
+  .main__pharagraph {
+    font-size: 16px;
+  }
+
+  .footer {
+    flex-direction: row;
+    height: 350px;
+    gap: 90px;
+    align-items: center;
+    background: linear-gradient(
+        0deg,
+        hsl(193, 37%, 48%, 0.8),
+        hsl(193, 37%, 48%, 0.8)
+      ),
+      url(/meetLandingPage/assets/desktop/image-footer.jpg);
+    background-size: 100% 100%, cover;
+  }
+
+  .footer__subtitle {
+    width: 28%;
+    font-size: 40px;
+    text-align: left;
+    line-height: 50px;
+  }
+  .footer__text {
+    width: 28%;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .footer__download {
+    margin-bottom: 0;
+    font-size: 16px;
+    padding: 14px 30px;
+  }
+}

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+:root{
+    --fontBigShoulders: 'Big Shoulders Display';
+    --fontOutfit: 'Outfit';
+
+    --colorAlmostBlack: hsl(0, 0%, 8%);
+    --colorWhite: hsl(0, 0%, 100%);
+    --colorGold: hsl(24, 56%, 63%);
+    --colorDarkGrey: hsl(0, 0%, 27%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2.2rem;
+    font-family: var(--fontBigShoulders);
+}
+
+.container{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+h1, h2{
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 0;
+}
+
+p{
+    font-family: var(--fontOutfit);
+    line-height: 1.6;
+}
+
+/* HERO */
+.hero{
+    background-image: url(../images/mobile/image-hero.jpg);
+    background-size: 100% cover;
+    background-repeat: no-repeat;
+}
+
+

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+    --fontPrincipal:'Josefin Sans', sans-serif;
+
+    --primaryRed: hsl(0, 93%, 68%);
+    --primaryRedLight: hsl(0, 36%, 70%);
+    --neutralBrown: hsl(0, 6%, 24%);
+    --gradientWhite: hsl(0, 0%, 100%);
+    --gradientBeige:hsl(0, 100%, 98%);
+    --gradientRed:hsl(0, 74%, 74%);
+    --gradientRedLight:hsl(0, 80%, 86%);
+
+    --marginTop: 5rem;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    font-size: 16px;
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 90rem;
+    margin: 5rem auto;
+    display: flex;
+    font-family: var(--fontPrincipal);
+}
+
+.contain{
+    flex-basis: 55%;
+    padding: 5rem 12rem 10rem 10rem;
+    background-image: url(/images/bg-pattern-desktop.svg);
+    background-color: var(--gradientBeige);
+    background-size: cover;
+}
+
+.card__logo{
+    width: 10rem;
+    margin-bottom: 8rem;
+}
+
+.card__info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card__title{
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 4.5rem;
+}
+span{
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--primaryRedLight);
+}
+.card__text{
+    color: var(--primaryRedLight);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.card__img{
+    width: 45%;
+    background-image: url(/images/hero-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card__form{
+    position: relative;
+    width: 27rem;
+    margin-top: 1rem;
+}
+.card__email{
+    width: 100%;
+    background-color: transparent;
+    padding: 1rem;
+    padding-left: 2.2rem;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0 0 0.5px 0.3px rgb(0 0 0 / 30%);
+    font-family: var(--fontPrincipal);
+    font-size: 1rem;
+    font-weight: 300;
+}
+.card__email:focus{
+    outline: none;
+}
+.card__email::placeholder{
+    color: var(--primaryRedLight);
+}
+.card__button{
+    position: absolute;
+    background: linear-gradient(to right, var(--gradientRedLight), var(--gradientRed));
+    border: none;
+    height: 100%;
+    width: 6rem;
+    border-radius: 8rem;
+    right: 0;
+}
+.card__button img{
+    width: 0.8rem;
+}

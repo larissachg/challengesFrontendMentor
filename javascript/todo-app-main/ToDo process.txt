@@ -1,0 +1,43 @@
+1. Acceder a los elementos DOM
+- Separar los pasos a realizar por partes: Globales, Funcion Principal, Funciones, Eventos, Helpers
+2. Crear un arreglo vacio donde estaran las tareas (let)
+3. Crear una funcion principal para agregar las tareas
+	- Crear una variable para el objeto tarea y sus propiedades
+	- agregarla al arreglo de tareas anteriormente creado
+4. Crear una funcion para anhadir las tareas al DOM
+	- Anhadir el elemento de las tareas (li)
+	- Agregar sus clases y elementos hijos de li
+5. agregar el evento al hacer enter para agregar tarea
+6. agregar el evento del check (completado)
+7. agregar el evento en la imagen X para que aparezca y desaparezca al hacer hover
+8. agregar el evento en la imagen X para que se elimine la tarea al hacer click
+9. acceder al elemento Dom para el contador y Crear una funcion para contar las tareas (colocarla dentro de la funcion principal y de las necesarias para actualizar el conteo)
+10. acceder al elemento DOM del clear y agregar el evento para limpiar todas las tareas completadas
+	- el arreglo de tareas va a ser igual al filtrado de las tareas y va a retornar las que no esten con el estado de 'completadas'
+	- Acceder al DOM de las tareas que tengan la clase activa (check)
+	- Para eliminarlas del DOM hay que Recorrer esas tareas activas una por una y removerlas
+	-agregar el contador para que se actualice
+11. acceder a los elementos DOM de los filtros y al elemento de INFO que se usara mas adelante
+	- recorrer filtro por filtro para poder agregarle un evento a todos
+	- dentro del evento, acceder al elemento DOM de los filtros activados
+	- recorrer uno por uno cada filtro activado para que se remueva de cada uno la classlist de filtro activado (Ya que viene por defecto uno seleccionado, esto se 	lo quita)
+	- a cada filtro que se le haga click, se le anhade la class list (Esto le anhade el estilo de letra azul solo al que se haga click)
+	- se pone el contenido de la lista (ul) vacio (para que al hacer click salga una nueva lista segun lo seleccionado)
+FILTRO ACTIVE: se crea una funcion-> (if) si el contenido del filtro es igual a 'ACTIVE' -> luego se crea una variable para seleccionar solo las tareas activas filtrando el array de tareas con la variable de cada tarea -> entonces se retorna las tareas que tengan el estado 'Pendiente' luego se recorre cada uno de esos pendientes y se llama la funcion para agregar tareas al DOM (las tareas con sus propiedades)
+	- antes de cerrar la funcion (if) llamar a la funcion que muestra la cantidad de tareas con el parametro de que solo cuente la longitud de solo los pendientes.
+FILTRO COMPLETED: crear otra funcion -> (else if) si el contenido es igual a 'COMPLETED' -> luego se crea una variable para seleccionar solo las tareas completadas filtrando el array de tareas con la variable de cada tarea ->entonces se retorna las tareas que tengan el estado 'Completado' luego se recorre cada uno de esos completados y se llama la funcion para agregar tareas al DOM (las tareas con sus propeidades)
+	- antes de cerrar la funcion (else if) llamar a la funcion que muestra la cantidad de tareas con el parametro de que solo cuente la longitud de solo los pendientes.
+FILTRO ALL: crear otra funcion -> (else if) si el contenido es igual a 'ALL' y SIN CREAR UNA VARIABLE (como en los anteriores casos) se recorre directamente tarea por tarea del array de tareas y se llama la funcion para agregar tareas al DOM (las tareas con sus propiedades)
+	- antes de cerrar la funcion (else if) llamar a la funcion que muestra la cantidad de tareas (sin parametro ya que tiene que contar todo).
+12. antes de cerrar el evento se accede al elemento DOM del bloque de info y se anhade al UL como ultimo hijo ya que fue eliminado con el paso anterior
+13. acceder al elemento DOM de los span que tienen el icono de los temas (light & dark)
+14. acceder al elemento DOM del contenedor principal (el que cambia todo el tema) (fondo claro y oscuro)
+15. Crear una funcion que recorra cada span del tema que tenga como parametro el icono donde se hara click
+	- crear un evento al icono donde se haga click
+	- agregar al contenedor un toggle con la clase que cambia todo visualmente
+	- agregar al icono un toggle con la clase que identifique que este activado
+	- agregar al icono una clase que identifique que este oculto (para que se esconda el otro icono)
+16. dentro del mismo eveneto se crea una funcion si (if) con parametro del evento target padre para llegar al siguiente elemento hermano
+	- al parametro se agrega toggle indicando que el tema esta oculto
+	- al parametro se agrega una clase de lista indicando que el tema esta activo
+	- ELSE se hace el mismo parametro cambiando por el hermano anterior: agregando un toggle con el tema oculto y agregando una lista de clases con el tema activo
