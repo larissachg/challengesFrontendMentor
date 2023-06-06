@@ -178,7 +178,7 @@ body {
       hsl(193, 37%, 48%, 0.8),
       hsl(193, 37%, 48%, 0.8)
     ),
-    url(/meetLandingPage/assets/mobile/image-footer.jpg);
+    url(../meetLandingPage/assets/mobile/image-footer.jpg);
   background-size: 100% 100%, cover;
   position: relative;
 }
@@ -388,7 +388,7 @@ body {
         hsl(193, 37%, 48%, 0.8),
         hsl(193, 37%, 48%, 0.8)
       ),
-      url(/meetLandingPage/assets/desktop/image-footer.jpg);
+      url(../meetLandingPage/assets/desktop/image-footer.jpg);
     background-size: 100% 100%, cover;
   }
 

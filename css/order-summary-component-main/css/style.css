@@ -27,7 +27,7 @@ body{
     height: 100vh;
     align-items: center;
     display: flex;
-    background-image: url(/images/pattern-background-desktop.svg);
+    background-image: url(../images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-color: var(--primaryWhite);
     background-size: 100% 50%;

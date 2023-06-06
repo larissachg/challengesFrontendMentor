@@ -58,7 +58,7 @@ const agregarTareaDom = (identifier, title, state, date) => {
   //IMAGEN X
   const acrossImg = document.createElement("img");
   acrossImg.setAttribute("class", "item__img");
-  acrossImg.setAttribute("src", "/images/icon-cross.svg");
+  acrossImg.setAttribute("src", "./images/icon-cross.svg");
   //EVENTO X (HOVER)
   newLi.addEventListener("mouseover", (e) => {
     acrossImg.classList.add("class", "item__img--visible");
