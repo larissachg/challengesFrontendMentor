@@ -20,8 +20,8 @@
 
   --fontFamily: "Josefin Sans";
 
-  --backgroundWeb: url(/images/bg-desktop-dark.jpg);
-  --backgroundMob: url(/images/bg-mobile-dark.jpg);
+  --backgroundWeb: url(../images/bg-desktop-dark.jpg);
+  --backgroundMob: url(../images/bg-mobile-dark.jpg);
 }
 
 .light{
@@ -32,8 +32,8 @@
   --Placeholder: hsl(236, 9%, 61%);
   --CompletedLine: hsl(233, 11%, 84%);
   --Circle:hsl(249, 86%, 75%);
-  --backgroundWeb: url(/images/bg-desktop-light.jpg);
-  --backgroundMob: url(/images/bg-mobile-light.jpg);
+  --backgroundWeb: url(../images/bg-desktop-light.jpg);
+  --backgroundMob: url(../images/bg-mobile-light.jpg);
 }
 
 html {
@@ -132,7 +132,7 @@ span:hover{
 }
 
 .circle--active {
-  background-image: url(/images/icon-check.svg),
+  background-image: url(../images/icon-check.svg),
     linear-gradient(105deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
   background-repeat: no-repeat;
   background-position: center;
@@ -159,7 +159,7 @@ span:hover{
 }
 
 .list__item--active .circle{
-  background-image: url(/images/icon-check.svg),
+  background-image: url(../images/icon-check.svg),
     linear-gradient(105deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
   background-repeat: no-repeat;
   background-position: center;

@@ -43,7 +43,7 @@ body{
 .contain{
     flex-basis: 55%;
     padding: 5rem 12rem 10rem 10rem;
-    background-image: url(/images/bg-pattern-desktop.svg);
+    background-image: url(../images/bg-pattern-desktop.svg);
     background-color: var(--gradientBeige);
     background-size: cover;
 }
@@ -80,7 +80,7 @@ span{
 
 .card__img{
     width: 45%;
-    background-image: url(/images/hero-desktop.jpg);
+    background-image: url(../images/hero-desktop.jpg);
     background-size: cover;
     background-position: center;
 }
