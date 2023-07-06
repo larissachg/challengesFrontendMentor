@@ -1,0 +1,64 @@
+@use "variables" as *;
+@use "mixins" as m;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $background;
+  font-family: $fontPrincipal;
+  min-height: 100vh;
+  @include m.flex();
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h3 {
+  color: $cyanPrimary;
+  font-size: 2.4rem;
+}
+
+input {
+  border: none;
+  background-color: $inputBackground;
+  width: 100%;
+  font-family: $fontPrincipal;
+  text-align: right;
+  font-size: 2.5rem;
+  cursor: pointer;
+  outline: none;
+  color: $cyanSecundary;
+  border-radius: 0.5rem;
+}
+input::placeholder{
+  color: $grayPlaceholder;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 1rem 0;
+  font-size: 2.5rem;
+  border-radius: 0.5rem;
+  font-family: $fontPrincipal;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 5rem 2rem;
+  @include m.flex();
+  flex-direction: column;
+  gap: 5rem;
+}
