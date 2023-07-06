@@ -1,0 +1,44 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.result {
+  &__calculator {
+    @include m.flexCol();
+    gap: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  &__info {
+    @include m.flex();
+    justify-content: space-between;
+  }
+
+  &__subtitle{
+    font-size: 1.5rem;
+    @include m.tablet{
+      font-size: 1.4rem;
+    }
+  }
+
+  &__price {
+    font-size: 3.8rem;
+  }
+
+  &__button {
+    background-color: $bottonInactive;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    color: $cyanSecundary;
+
+    &-active {
+      background-color: $cyanPrimary;
+    }
+
+    &:hover{
+      @include m.bgColor($bottonHover, $cyanSecundary);
+    }
+  }
+}

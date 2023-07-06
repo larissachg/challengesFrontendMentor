@@ -1,0 +1,34 @@
+@use "../base/variables" as *;
+
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin bgColor($bg, $text){
+  background-color: $bg;
+  color: $text;
+}

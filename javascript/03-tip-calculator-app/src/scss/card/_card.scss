@@ -1,0 +1,35 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.card {
+  box-shadow: 0 0 20px 15px hsla(183, 100%, 15%, 0.086);
+  background-color: $white;
+  padding: 3rem;
+  border-radius: 2rem;
+  display: grid;
+  gap: 4rem;
+
+  @include m.tablet {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+
+  &__info {
+    @include m.flexCol();
+    gap: 2rem;
+  }
+
+  &__result {
+    background-color: $cyanSecundary;
+    color: $grayPerson;
+    padding: 4rem 3rem;
+    border-radius: 1.5rem;
+    @include m.flexCol();
+    justify-content: space-between;
+
+    @include m.tablet {
+      padding: 4rem;
+      font-size: 1.1rem;
+    }
+  }
+}

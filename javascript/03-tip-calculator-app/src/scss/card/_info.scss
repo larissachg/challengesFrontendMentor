@@ -1,0 +1,71 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.info {
+  &__title {
+    color: $darkGrayText;
+    margin-bottom: 1rem;
+
+    &--result {
+      color: $cyanLightTextResult;
+      margin: 0;
+    }
+  }
+
+  &__number {
+    background-color: $inputBackground;
+    padding: 1rem 2rem;
+    @include m.flex();
+    justify-content: space-between;
+
+    &-icon {
+      width: 1.5rem;
+      height: 2rem;
+    }
+    //Cuando se escribe el bill
+    &-active {
+      border: 2px solid $cyanPrimary;
+    }
+  }
+
+  &__custom {
+    &::placeholder {
+      color: $darkGrayText;
+    }
+    @include m.tablet {
+      font-size: 2rem;
+    }
+    @include m.desktop {
+      font-size: 2.5rem;
+    }
+    //Cuando se escribe el porcentaje manual
+    &-active {
+      border: 2px solid $cyanPrimary;
+    }
+  }
+
+  &__porcent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+
+    @include m.tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  //BOTONES DE PORCENTAJES
+  &__button {
+    @include m.bgColor($cyanSecundary, $white);
+
+    &-active {
+      //Cuando seleccione un porcentaje
+      @include m.bgColor($cyanPrimary, $cyanSecundary);
+    }
+
+    &:hover {
+      @include m.bgColor($bottonHover, $cyanSecundary);
+    }
+  }
+}
