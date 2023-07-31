@@ -1,0 +1,112 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.card {
+  background-color: $white;
+  padding: 5rem 2rem;
+  border-radius: 3rem 3rem 10rem 3rem;
+
+  @include m.tablet {
+    padding: 5rem;
+    width: 65rem;
+  }
+
+  @include m.desktop {
+    width: 80rem;
+  }
+
+  &__date {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    border-bottom: 1px solid $line;
+    padding-bottom: 6rem;
+    position: relative;
+
+    &-arrow {
+      padding: 2rem;
+      border-radius: 50%;
+      position: absolute;
+      background-color: $purple;
+      bottom: -3rem;
+      left: 50%;
+      transform: translateX(-50%);
+      cursor: pointer;
+
+      @include m.tablet {
+        right: -5rem;
+        left: auto;
+        padding: 2.5rem;
+        bottom: -4rem;
+      }
+
+      img {
+        width: 2rem;
+        @include m.tablet {
+          width: 4rem;
+        }
+      }
+
+      &:hover {
+        background-color: $blackText;
+      }
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+
+    &-name {
+      text-transform: uppercase;
+      color: $grayText;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+      font-size: 1.3rem;
+
+      &--alert{
+        color: $lightRed;
+      }
+    }
+
+    &-input{
+      &:focus{
+        border: 1px solid $purple;
+      }
+      &--alert{
+          border: 1px solid $lightRed;
+          &:focus{
+            border: 1px solid $lightRed;
+          }
+      }
+    }
+
+    &-alert{
+        @include m.alert();
+      }
+
+    &-empty{
+      @include m.alert();
+    }
+    
+  }
+
+  &__result {
+    margin-top: 6rem;
+
+    &-text {
+      font-size: 5rem;
+      font-weight: 800;
+      color: $purple;
+
+      @include m.tablet {
+        font-size: 8rem;
+      }
+    }
+
+    &-name{
+      color: $blackText;
+    }
+  }
+}

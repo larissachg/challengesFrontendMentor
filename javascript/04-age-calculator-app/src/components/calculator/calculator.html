@@ -1,0 +1,51 @@
+<div class="card">
+  <div class="card__date">
+    <div class="card__block">
+      <label id="dayTitle" class="card__block-name">day</label>
+      <input id="day" class="card__block-input" type="number" min="1" max="31" placeholder="DD" />
+      <p id="dayAlert" class="card__block-alert"></p>
+      <p id="dayEmpty" class="card__block-empty"></p>
+    </div>
+
+    <div class="card__block">
+      <label id="monthTitle" class="card__block-name">month</label>
+      <input id="month" class="card__block-input" type="number" min="1" max="12" placeholder="MM" />
+      <p id="monthAlert" class="card__block-alert"></p>
+      <p id="monthEmpty" class="card__block-empty"></p>
+    </div>
+
+    <div class="card__block">
+      <label id="yearTitle" class="card__block-name">year</label>
+      <input id="year" class="card__block-input" type="number" placeholder="YYYY" />
+      <p id="yearAlert" class="card__block-alert"></p>
+      <p id="yearEmpty" class="card__block-empty"></p>
+    </div>
+
+    <div class="card__date-arrow">
+      <img src="../../../public/assets/images/icon-arrow.svg" alt="icon" />
+    </div>
+  </div>
+
+  <div class="card__result">
+    <p class="card__result-text">
+      <i>
+        <span id="year-result">-- </span>
+        <span class="card__result-name">years</span>
+      </i>
+    </p>
+
+    <p class="card__result-text">
+      <i>
+        <span id="month-result">-- </span>
+        <span class="card__result-name">months</span>
+      </i>
+    </p>
+
+    <p class="card__result-text">
+      <i>
+        <span id="day-result">-- </span>
+        <span class="card__result-name">days</span>
+      </i>
+    </p>
+  </div>
+</div>
