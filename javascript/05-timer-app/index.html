@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer App</title>
+  </head>
+  <body>
+    <div id="contain" class="w-full h-screen bg-[#1e2140] py-10">
+
+      <div id="card" class="max-w-xl text-[#d7e0ff] text-center flex flex-col gap-12 mx-auto items-center">
+
+        <h1 class="text-4xl font-bold">pomodoro</h1>
+
+        <div class="bg-[#151932] grid grid-cols-3 p-2 rounded-full w-4/5 z-10">
+          <button id="pomodoroBtn" class="btn text-[1.1rem] p-4 bg-[#f87070] rounded-full font-bold text-[#151932]">pomodoro</button>
+          <button id="shortBtn" class="btn text-[1.1rem] p-4 rounded-full font-bold text-[#60647d]">short break</button>
+          <button id="longBtn" class="btn text-[1.1rem] p-4 rounded-full font-bold text-[#60647d]">long break</button>
+        </div>
+
+          <div class="rounded-full w-[29rem] h-[29rem] bg-gradient-to-br from-[#131734] via-[#202344] to-[#282c51] p-7 cursor-pointer" style="box-shadow: -50px -50px 100px #272c5a, 50px 50px 100px #121530;">
+  
+            <div id="timerBox" class="w-full h-full bg-[#151932] rounded-full flex flex-col justify-center border-[10px] border-[#f87070]">
+              <p id="timeText" class="font-bold text-[7rem]">30:00</p>
+              <small id="state" class="text-xl tracking-[14px] uppercase mt-9">play</small>
+            </div>
+            
+          </div>
+
+      </div> <!--Card -->
+
+    </div> <!--Contain -->
+    
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
