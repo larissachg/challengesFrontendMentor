@@ -2,7 +2,7 @@
 
 ## ⌨️ Proyectos de Practica CSS 
 
-| Número | Proyecto | Código | Web |
+| Número | Proyecto | Código |
 | --- | --- | --- | --- |
 | `01` | Gallery Art | [Ver](css/GalleryArt) |
 | `02` | ProductPreviewCardComponentLara | [Ver](css/ProductPreviewCardComponentLara) |
