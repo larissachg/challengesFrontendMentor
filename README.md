@@ -4,14 +4,14 @@
 
 | Número | Proyecto | Código | Web |
 | --- | --- | --- | --- |
-| `01` | Gallery Art | [Ver](css/GalleryArt) | [Visitar]() |
-| `02` | ProductPreviewCardComponentLara | [Ver](css/ProductPreviewCardComponentLara) | [Visitar]() |
-| `03` | baseApparel | [Ver](css/baseApparel) | [Visitar]() |
-| `04` | eLearningLandingPage | [Ver](css/eLearningLandingPage) | [Visitar]() |
-| `05` | equalizerLandingPage | [Ver](css/equalizerLandingPage) | [Visitar]() |
-| `06` | meetLandingPage | [Ver](css/meetLandingPage) | [Visitar]() |
-| `07` | nftCardComponent | [Ver](css/nftCardComponent) | [Visitar]() |
-| `08` | order-summary-component-main | [Ver](css/order-summary-component-main) | [Visitar]() |
+| `01` | Gallery Art | [Ver](css/GalleryArt) |
+| `02` | ProductPreviewCardComponentLara | [Ver](css/ProductPreviewCardComponentLara) |
+| `03` | baseApparel | [Ver](css/baseApparel) |
+| `04` | eLearningLandingPage | [Ver](css/eLearningLandingPage) |
+| `05` | equalizerLandingPage | [Ver](css/equalizerLandingPage) |
+| `06` | meetLandingPage | [Ver](css/meetLandingPage) |
+| `07` | nftCardComponent | [Ver](css/nftCardComponent) |
+| `08` | order-summary-component-main | [Ver](css/order-summary-component-main) |
 
 ## ⌨️ Proyectos de Practica JavaScript 
 
