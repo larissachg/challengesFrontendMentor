@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Body Mass Calculator App</title>
+  </head>
+  <body>
+    <div class="contain">
+      <div class="w-full h-[60vh] bg-gradient-to-r from-[#f4fcff] via-[#effafe] to-[#cfe1f9] flex flex-col gap-8 items-center pt-12 text-center rounded-br-[4rem] rounded-bl-[4rem] relative">
+        <img src="./public/src/images/undraw_fitness_stats_sht6.svg" alt="img" class="w-[6rem]">
+        <h1 class="font-[Helvetica] text-[2.5rem] font-bold capitalize w-[32%] leading-10	tracking-tight">body mass index calculator</h1>
+        <p class="px-24 text-slate-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero aperiam ad eaque id eligendi iure amet sequi quae ipsa culpa, mollitia porro? Cumque necessitatibus, suscipit eos labore iste quo? Totam. Lorem ipsum, dolor sit amet consectetur adipisicing elit Cumque necessitatibus.</p>
+      </div>
+
+      <div class="w-[70%] shadow-lg shadow-gray-200 absolute top-[40%] right-[15%] bg-white p-8 rounded-2xl flex flex-col gap-8">
+        <h2 class="text-2xl font-bold">Enter your details below</h2>
+
+        <form>
+          <div id="data" class="grid grid-cols-2 gap-8">
+
+            <!-- <div id="metric" class="flex gap-5">
+              <input type="radio" name="type" id="metric" value="metric" class="w-6" checked>
+              <label class="font-bold">Metric</label>
+            </div> -->
+
+            <!-- <div id="imperial" class="flex gap-5">
+              <input type="radio" name="type" id="imperial" value="imperial" class="w-6">
+              <label class="font-bold">Imperial</label>
+            </div> -->
+
+            <div class="flex flex-col gap-2">
+              <p for="height" class="text-sm text-slate-500">Height</p>
+              <div class="w-auto py-4 pl-4 border rounded-lg">
+                <input type="number" class="w-[85%] text-2xl font-semibold outline-none" min="1" id="height">
+                <label class="text-[#426bfb] font-bold text-xl">cm</label>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <p for="height" class="text-sm text-slate-500">Weight</p>
+              <div class="w-auto py-4 pl-4 border rounded-lg">
+                <input type="number" class="w-[85%] text-2xl font-semibold outline-none" min="1" id="weight">
+                <label class="text-[#426bfb] font-bold text-xl">kg</label>
+              </div>
+            </div>
+            
+          </div>
+        </form>
+        
+          <div class="grid grid-cols-2 items-center gap-10 text-white bg-gradient-to-r from-[#3460f7] via-[#466cfb] to-[#577cff] p-7 rounded-r-[50rem] rounded-l-[7rem]">
+            <div>
+              <p class="text-[1.2rem]">Your BMI is...</p>
+              <h3 id="resultBMI" class="text-[4rem] font-bold pl-40">00.0</h3>
+            </div>
+            <div class="pr-16">
+              <p class="text-[1.2rem]">Your BMI suggests youre a healthy weight. <br>Your ideal weight is between: <br><span class="font-bold" id="pesoMin">00.0 kgs</span> - <span class="font-bold" id="pesoMax">00.0kgs</span>.</p>
+            </div>
+          </div>
+
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
