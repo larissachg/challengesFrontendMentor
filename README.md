@@ -18,7 +18,7 @@
 | Número | Proyecto | Código | Web |
 | --- | --- | --- | --- |
 | `01` | ToDo App | [Ver](javascript/01-todo-app-main) | [Visitar](https://todo-app-lara.netlify.app/) |
-| `02` | Advice Generator App | [Ver](javascript/02-advice-generator-app) | [Visitar]([https://](https://advicesapp-lara.netlify.app/)) |
+| `02` | Advice Generator App | [Ver](javascript/02-advice-generator-app) | [Visitar](https://advicesapp-lara.netlify.app/) |
 | `03` | Tip Calculator App | [Ver](javascript/03-tip-calculator-app) | [Visitar](https://tip-calculator-app-lara.netlify.app/) |
 | `04` | Age Calculator App | [Ver](javascript/04-age-calculator-app) | [Visitar](https://agecalculatorapp-lara.netlify.app/) |
 | `05` | Timer App | [Ver](javascript/05-timer-app) | [Visitar](https://timerapp-lara.netlify.app/) |
